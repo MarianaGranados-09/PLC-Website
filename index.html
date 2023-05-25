@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automation II: Function Blocks </title>
+</head>
+<body>
+  <header>
+    <h1>Automation II</h1>
+    <a href="https://github.com/MarianaGranados-09/"><h4 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: whitesmoke;">Made by: Mariana Granados</h4></a>
+    <h3>Lab assignment: Stoplight circuit using Function Blocks</h3>
+  </header>
+  <div class="info">
+    <p>Programmable logic controllers (PLCs) are digital computers used for industrial automation of electromechanical processes, such as control of machinery on factory assembly lines, amusement rides, or light fixtures. PLCs are used in many industries and machines.</p>
+    <h3>Function Blocks</h3>
+    <p>The practice consisted of implementing a stoplight circuit using function blocks. Function blocks are commonly used in TIA Portal as they allow the programmer to save time by reutilizing ladder code. Function blocks are very similar to regular functions used in programming languages such as C or Python. </p>
+
+    <p>Here is a screenshot of the program's main block, were we added our function blocks containing all the logic from each stoplight.</p>
+    </div>
+    <div class="container">
+      <img src="/images/j4.JPG" alt="main">
+    </div>
+    <div class="info">
+    <h3>HMI</h3>
+    <p>To make the stoplight easier to implement, we utilized an HMI, which are graphical interfaces or control panels that allow humans to interact with certain machines or systems. HMIs are very important in industry, as they serve as the primary communication between operators and the machines they control or in special cases, monitor. The following image shows the HMI used in this lab assignment: </p>
+  </div>
+  <div class="container">
+    <img src="/images/j3.jpg" alt="HMI">
+  </div>
+  <div class="info">
+    <p>The PLC model used is a S7-1200 1214 DC/DC/DC. You can find the manual on the PLC <a href="https://cache.industry.siemens.com/dl/files/121/109478121/att_851434/v1/s71200_system_manual_es-ES_es-ES.pdf">here.</a> We used three Siemens ethernet cables to make the connections between the PLC, the HMI panel and my laptop running TIA Portal.</p>
+  </div>
+  <div class="container">
+    <img src="/images/j1.jpg" alt="PLC image">
+  </div>
+  <div class="container">
+    <img src="/images/j2.jpg" alt="Ladder logic image">
+  </div>
+  <div class="info">
+    <p>First, we tested the program using only the HMI panel, where we added a start button, and two stoplights, each with three lights. As you can tell in the following video I added from youtube, the red light from the first stoplight is on, this is triggered by the FirstScan bit. When we push the start button, immediately the green light is turned on. The stoplight finishes its sequence and then proceeds to trigger the green light on the second stoplight. Once the second stoplight finishes, it triggers the first stoplight, making an infinite loop which simulates two real life stoplights at an intersection. </p> 
+  </div>
+  <div class="container">
+    <iframe width="100%" height="380rem" src="https://youtu.be/eJ8ulUmF750" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div class="info">
+    <h3>Implementation on physical leds</h3>
+    <p>We also gave it a go on implementing the program on the physical leds available with the plc we were given. Although we had to change the outputs used before for the lights, no other obstacle was encountered, so the stoplights worked as soon as we changed the memory assignments and reloaded the project. I have a video on that on my youtube channel too.</p>
+    <div class="container">
+      <iframe width="100%" height="380rem" src="https://www.youtube.com/embed/Mg3VlvP8qkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
+</html>
